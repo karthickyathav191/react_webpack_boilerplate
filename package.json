@@ -1,0 +1,8 @@
+{
+  "name": "react_webpack_boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack serve --mode development"
+  },
+  "license": "MIT"
+}
