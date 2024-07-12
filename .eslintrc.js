@@ -26,6 +26,7 @@ module.exports = {
     'react/function-component-definition': 0,
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'react/prop-types': ['error', 'never']
   }
 }
