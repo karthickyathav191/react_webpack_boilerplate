@@ -1,0 +1,10 @@
+@define-mixin wrapper {
+  background-color: red;
+}
+
+.container {
+  @mixin wrapper;
+  & .title {
+    color: white;
+  }
+}

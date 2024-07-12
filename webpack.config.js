@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -15,7 +16,7 @@ module.exports = {
       },
       {
         test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(png|svg|jpeg|jpg)$/,
@@ -24,6 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: 'index.html'

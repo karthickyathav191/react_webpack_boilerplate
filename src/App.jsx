@@ -1,9 +1,9 @@
-import Button from './components/Button/Button'
+import './app.css'
 
 const App = () => (
-  <>
-    <h2>React Webpack Boilerplate</h2>
-  </>
+  <div className='container'>
+    <h2 className='title'>React Webpack Boilerplate</h2>
+  </div>
 )
 
 export default App
