@@ -11,6 +11,7 @@
     "url": "https://github.com/karthickyathav191/react_webpack_boilerplate.git"
   },
   "license": "MIT",
+  "browserslist": ["defaults"],
   "devDependencies": {
     "@babel/core": "^7.24.6",
     "@babel/preset-env": "^7.24.6",
