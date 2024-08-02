@@ -1,12 +1,15 @@
 
-const Button = (props) => {
-  const {
-    type,
-    text,
-    className
-  } = props
+const CTAButton = (props) => {
   return (
-    <button className={className} type={type}>{text}</button>
+    <button {...props}>
+      {props.children}
+    </button>
+  )
+}
+
+const Button = (props) => {
+  return (
+    <CTAButton {...props}>{props.children}</CTAButton>
   )
 }
 
