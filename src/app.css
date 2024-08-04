@@ -1,5 +1,5 @@
-@define-mixin wrapper {
-  background-color: red;
+@define-mixin wrapper $color: red {
+  background-color: $color;
 }
 
 .container {

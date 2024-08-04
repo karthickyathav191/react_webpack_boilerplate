@@ -1,9 +1,9 @@
-import Button from './components/Button'
+import Button from 'components/Button'
 
-const Login = ({ handleClick, data }) => {
+const Login = () => {
 
   return (
-    <Button onClick={() => handleClick('Hell')} className={"btn"}>Click</Button>
+    <Button className={"btn"}>Click</Button>
   )
 }
 
