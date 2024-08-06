@@ -17,6 +17,11 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    'import/resolver': {
+      node: {
+        paths: ['src', '/node_modules']
+      }
     }
   },
   rules: {
@@ -27,6 +32,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-single'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'comma-dangle': ['error', 'never'],
-    'react/prop-types': ['error', 'never']
+    'react/prop-types': 0,
+    'import/first': ['error', 'absolute-first']
   }
 }
